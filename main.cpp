@@ -23,7 +23,7 @@ int main() {
     double rand_x{0.0}, rand_y{0.0}, origin_dist{0}, pi{0};
     int circle_points{0}, square_points{0};
 
-    chrono::steady_clock::time_point begin = chrono::steady_clock::now();
+    const chrono::steady_clock::time_point begin = chrono::steady_clock::now();
 
     random_device rd;
     mt19937 mt(rd());
@@ -47,7 +47,7 @@ int main() {
         }
     }
 
-    chrono::steady_clock::time_point end = chrono::steady_clock::now();
+    const chrono::steady_clock::time_point end = chrono::steady_clock::now();
 
     // Final Estimated Value
     cout << endl << "Final Estimation of Pi = " << setprecision(15) << pi << endl;
