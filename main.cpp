@@ -30,6 +30,7 @@ int main() {
     uniform_real_distribution<double> dist(0.0, INTERVAL + 1);
 
     cout << endl << "MONTECARLO PI COMPUTER v.0.1 " << endl << endl;
+    cout << setprecision(15);
 
     for (int i = 0; i < (INTERVAL * INTERVAL); i++) {
         rand_x = static_cast<double>(dist(mt)) / INTERVAL;
@@ -43,15 +44,15 @@ int main() {
         // Progress
         if (i % 10000000 == 0) {
             const double percentage = get_difference(pi);
-            cout << " - " << setprecision(15) << pi << " [" << percentage << "%]" << endl;
+            cout << " - " << pi << " [" << percentage << "%]" << endl;
         }
     }
 
     const chrono::steady_clock::time_point end = chrono::steady_clock::now();
 
     // Final Estimated Value
-    cout << endl << "Final Estimation of Pi = " << setprecision(15) << pi << endl;
-    cout << "Real Value of Pi = " << setprecision(15) << M_PI << endl << endl;
+    cout << endl << "Final Estimation of Pi = " << pi << endl;
+    cout << "Real Value of Pi = " << M_PI << endl << endl;
 
     cout << "Elapsed = " << chrono::duration_cast<chrono::seconds>(end - begin).count() << " sec." << endl << endl;
 
