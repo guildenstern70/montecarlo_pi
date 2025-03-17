@@ -6,17 +6,18 @@
  *
  */
 
+#include <iostream>
+#include <iomanip>
 #include <random>
 #include <chrono>
-#include <bits/stdc++.h>
 
 #define INTERVAL 10000
-#define M_PI     3.14159265358979323846
+#define DEFAULT_PI     3.14159265358979323846
 
 using namespace std;
 
 double get_difference(const double computedPi) {
-    return (computedPi / M_PI) * 100;
+    return (computedPi / DEFAULT_PI) * 100;
 }
 
 int main() {

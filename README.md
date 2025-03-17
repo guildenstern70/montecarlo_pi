@@ -8,3 +8,4 @@ See: https://www.101computing.net/estimating-pi-using-the-monte-carlo-method
 BENCHMARKS:
 
 Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz: 25 secs.
+Apple M1 PRO 2020: 8 secs.
