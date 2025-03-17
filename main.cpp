@@ -53,7 +53,7 @@ int main() {
 
     // Final Estimated Value
     cout << endl << "Final Estimation of Pi = " << pi << endl;
-    cout << "Real Value of Pi = " << M_PI << endl << endl;
+    cout << "Real Value of Pi = " << DEFAULT_PI << endl << endl;
 
     cout << "Elapsed = " << chrono::duration_cast<chrono::seconds>(end - begin).count() << " sec." << endl << endl;
 
