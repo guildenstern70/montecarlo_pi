@@ -11,3 +11,4 @@ BENCHMARKS:
 * Intel(R) Core(TM) Ultra 7 265K 3.90 GHz -- MSVC --: 5 secs.
 * Intel(R) Core(TM) Ultra 7 265K 3.90 GHz -- MinGW --: 21 secs. 
 * Apple(R) M1 PRO 2020: 8 secs.
+* Apple(R) M1 MAX 2020: 8 secs.
